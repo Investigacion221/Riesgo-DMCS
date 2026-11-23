@@ -361,7 +361,7 @@ if (typeof module !== "undefined") {
   function pedirLugar(modo) {                                    // paso 3
     S.estado = modo === 2 ? "lugar2" : "lugar"; S.intentos = 0;
     bot(modo === 2 ? "¿Con qué comuna o región quieres comparar?" :
-      "¿Para qué comuna de la Región Metropolitana quieres la consulta? También puedo consultar otras regiones de Chile. Escribe el nombre (por ejemplo, Maipú o Biobío) o elige una opción.",
+      "¿Para cual Región te gustaría hacer la consulta? Puedes consultar otras regiones de Chile. Escribe el nombre (por ejemplo, Maule, Biobío o Aysén) o elige una opción.",
       [{ label: "Región Metropolitana", id: "reg:" + D.regiones.indexOf("Metropolitana") }, { label: "Ver todas las regiones", id: "ver_reg" }]);
   }
 
